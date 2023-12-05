@@ -79,4 +79,5 @@ new_vals = []
 for pair in vals:
     new_vals.extend(mapper(pair))
 vals = new_vals
-print(min(vals))
+vals = list(filter(lambda x: x[1] > 0, vals))
+print(min(vals)[0])
