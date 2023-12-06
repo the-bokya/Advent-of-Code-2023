@@ -8,9 +8,7 @@ def ways(time, dist):
     if most == int(most):
         most -= 1
     most = int(most)
-    least = time - most
-    print(time, dist, least, most, "meow")
-    return time - 2 * least + 1
+    return 2 * most - time + 1
 
 pattern = re.compile("[0-9]+")
 tiempo = re.findall(pattern, tiempo)
