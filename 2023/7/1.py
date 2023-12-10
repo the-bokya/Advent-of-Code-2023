@@ -1,6 +1,6 @@
 from collections import Counter
 cards = []
-with open("input") as f:
+with open("sample_2") as f:
     for i in f:
         i = i.removesuffix("\n")
         a, b = i.split(" ")

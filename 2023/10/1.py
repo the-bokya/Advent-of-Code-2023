@@ -85,6 +85,7 @@ for i in shejari:
     prev = s
     while True:
         if char(current) == "S":
+            print(steps, "hahaha")
             if steps > steps_max:
                 steps_max = steps
                 loop_max = loop
