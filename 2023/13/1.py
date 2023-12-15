@@ -2,7 +2,7 @@ inps = []
 lines = []
 def solve(lines, cache, height, hor=True):
     print(lines)
-    if lines == lines[::-1]:
+    if lines == lines[::-1] and len(lines) % 2 == 0:
         return height // 2 + 1
     first = lines[0]
     last = lines[-1]
@@ -24,7 +24,7 @@ def solve(lines, cache, height, hor=True):
                 current = lines[a: mand + 1]
             else:
                 current = lines[mand: a + 1]
-            if current == current[::-1]:
+            if current == current[::-1] and (a + mand) % 2 == 1:
                 if hor:
                     return ((a + mand + 1) // 2) * 100
                 return (a + mand + 1) // 2
